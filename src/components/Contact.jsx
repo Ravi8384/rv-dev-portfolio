@@ -5,9 +5,15 @@ import emailjs from "@emailjs/browser";
 import {Toaster, toast } from "sonner";
 
 // EmailJS Configuration - Replace these with your actual EmailJS credentials
-const EMAILJS_SERVICE_ID = "service_g7ivfig";
-const EMAILJS_TEMPLATE_ID = "template_ieqcgaj";
-const EMAILJS_PUBLIC_KEY = "NJkBGGW2uti5-5T2O";
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID =import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+console.log("EmailJS Service ID:", EMAILJS_SERVICE_ID);
+console.log("EmailJS Template ID:", EMAILJS_TEMPLATE_ID);
+console.log("EmailJS Public Key:", EMAILJS_PUBLIC_KEY);
+
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -33,15 +39,14 @@ const itemVariants = {
 } 
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "astha@example.com", href: "mailto:astha@example.com" },
-  { icon: Phone, label: "Phone", value: "+91 98765 43210", href: "tel:+919876543210" },
-  { icon: MapPin, label: "Location", value: "India", href: "#" },
+  { icon: Mail, label: "Email", value: "av.asthaverma17@gmail.com", href: "mailto:av.asthaverma17@gmail.com" },
+  { icon: Phone, label: "Phone", value: "+91 6397735418", href: "tel:+916397735418" },
+  { icon: MapPin, label: "Location", value: "India", href: "https://maps.app.goo.gl/DMYyaK3FrfcY5oLCA" },
 ];
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "https://github.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
+  { icon: Github, label: "GitHub", href: "https://github.com/AsthaVerma17" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/astha-verma-186856196/" },
 ];
 
 export default function ContactMe() {
@@ -84,7 +89,7 @@ export default function ContactMe() {
     } finally {
       setIsLoading(false);
     }
-  };
+  }
 
   return (
     <section className="min-h-screen bg-black text-white py-20 px-6 md:px-12 lg:px-24">

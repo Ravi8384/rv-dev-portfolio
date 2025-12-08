@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { Github, Folder } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -26,73 +26,34 @@ const cardVariants = {
 
 const projects = [
   {
-    title: "E-Commerce Dashboard",
-    description: "A comprehensive admin dashboard for managing online stores with real-time analytics, inventory management, and order tracking.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
+    title: "RAG based Chat App",
+    description: "Designed and implemented a Retrieval-Augmented Generation (RAG) chatbot using Angular, PrimeNG, and PrimeFlex. Leverages GPT models for intelligent, context-aware responses with workspace management, file uploads, role-based access control, and chat history features.",
+    tech: ["Angular", "PrimeNG", "PrimeFlex", "GPT", "RAG"],
     github: "https://github.com",
-    live: "https://example.com",
     featured: true,
   },
   {
-    title: "AI Chat Application",
-    description: "Real-time chat application powered by OpenAI GPT, featuring conversation history, context awareness, and multi-language support.",
-    tech: ["Angular", "Node.js", "Socket.io", "OpenAI API"],
+    title: "Langflow – React Frontend Customization",
+    description: "Customized and enhanced the Langflow open-source React frontend codebase. Implemented UI improvements, optimized component structure, and integrated new features while maintaining code quality and compatibility.",
+    tech: ["React", "TypeScript", "Open Source"],
     github: "https://github.com",
-    live: "https://example.com",
     featured: true,
   },
   {
-    title: "Task Management System",
-    description: "Collaborative project management tool with drag-and-drop functionality, team assignments, and progress tracking.",
-    tech: ["React", "Redux", "Firebase", "Material UI"],
+    title: "Prompting Skills Enhancement App",
+    description: "Interactive web application using Angular workspace architecture, enabling users to improve prompting skills through SDLC-based exercises and real-time feedback. Achieved 30% improved user engagement and 20% faster loading time.",
+    tech: ["Angular", "PrimeNG", "PrimeFlex", "TypeScript"],
     github: "https://github.com",
-    live: "https://example.com",
     featured: true,
-  },
-  {
-    title: "Portfolio Generator",
-    description: "Dynamic portfolio website generator that creates stunning personal websites from simple JSON configurations.",
-    tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://example.com",
-    featured: false,
-  },
-  {
-    title: "Weather Dashboard",
-    description: "Beautiful weather application with 7-day forecasts, location search, and animated weather visualizations.",
-    tech: ["React", "OpenWeather API", "CSS Animations"],
-    github: "https://github.com",
-    live: "https://example.com",
-    featured: false,
-  },
-  {
-    title: "Code Snippet Manager",
-    description: "Developer tool for organizing and sharing code snippets with syntax highlighting and tagging system.",
-    tech: ["Vue.js", "MongoDB", "Prism.js"],
-    github: "https://github.com",
-    live: "https://example.com",
-    featured: false,
   },
 ];
 
 const experience = [
   {
-    role: "Senior Frontend Developer",
-    company: "Tech Innovators Inc.",
-    duration: "2022 - Present",
-    description: "Leading frontend development for enterprise applications using React and Angular. Mentoring junior developers and establishing best practices.",
-  },
-  {
-    role: "Frontend Developer",
-    company: "Digital Solutions Ltd.",
-    duration: "2020 - 2022",
-    description: "Developed responsive web applications and implemented complex UI components. Collaborated with design team for pixel-perfect implementations.",
-  },
-  {
-    role: "Junior Developer",
-    company: "StartUp Hub",
-    duration: "2018 - 2020",
-    description: "Built and maintained multiple client websites. Gained expertise in modern JavaScript frameworks and CSS methodologies.",
+    role: "Software Developer",
+    company: "Capgemini",
+    duration: "September 2023 - Present",
+    description: "Developed diverse frontend applications using Angular. Designed pixel-perfect UIs including GPT-powered chatbot and prompting skills app. Integrated backend APIs, optimized performance, and implemented user-centric features.",
   },
 ];
 
@@ -136,7 +97,7 @@ export default function Projects() {
               {/* Header */}
               <div className="flex items-center justify-between mb-4">
                 <Folder className="w-10 h-10 text-[#16f2b3]" />
-                <div className="flex gap-3">
+                {/* <div className="flex gap-3">
                   <motion.a
                     href={project.github}
                     target="_blank"
@@ -146,23 +107,14 @@ export default function Projects() {
                   >
                     <Github className="w-5 h-5" />
                   </motion.a>
-                  <motion.a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.2, color: "#16f2b3" }}
-                    className="text-gray-400 hover:text-[#16f2b3] transition-colors"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </motion.a>
-                </div>
+                </div> */}
               </div>
 
               {/* Content */}
               <h3 className="text-xl font-semibold mb-3 group-hover:text-[#16f2b3] transition-colors">
                 {project.title}
               </h3>
-              <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+              <p className="text-gray-400 text-sm mb-4">
                 {project.description}
               </p>
 

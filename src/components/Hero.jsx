@@ -1,7 +1,7 @@
 
 import { motion } from "motion/react";
 // Update the path and filename to your actual image file
-import circleProfile from "../assets/circle-profile.png";
+import circleProfile from "../assets/av.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
