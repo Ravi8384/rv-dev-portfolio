@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter, Loader2 } from "lucide-react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from "sonner";
+import {Toaster, toast } from "sonner";
 
 // EmailJS Configuration - Replace these with your actual EmailJS credentials
 const EMAILJS_SERVICE_ID = "service_g7ivfig";
@@ -88,6 +88,7 @@ export default function ContactMe() {
 
   return (
     <section className="min-h-screen bg-black text-white py-20 px-6 md:px-12 lg:px-24">
+    <Toaster position="top-right" richColors />
       <motion.div
         variants={containerVariants}
         initial="hidden"
