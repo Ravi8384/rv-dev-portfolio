@@ -81,9 +81,9 @@ export const About= ({user, skillsWithLevels}) => {
               className="grid grid-cols-3 gap-6 pt-6"
             >
               {[
-                { value: "3+", label: "Years Experience" },
-                { value: "20+", label: "Projects" },
-                { value: "10+", label: "Technologies" },
+                { value: "2+", label: "Years Experience" },
+                { value: "3+", label: "Projects" },
+                { value: "5+", label: "Technologies" },
               ].map((stat, index) => (
                 <motion.div
                   key={index}

@@ -20,7 +20,7 @@ function App() {
 }
 
   const userName = "Astha Verma";
-  const skills = ["Frontend Developer", "Angular", "React", "GenAI"," TypeScript", "Tailwind CSS"];
+  const skills = ["Frontend Developer", "Angular", "React", "GenAI", "JavaScript", "TypeScript", "Tailwind CSS"];
   const heroSummary = "Crafting beautiful, performant web experiences with modern technologies and a passion for clean code.";
 
   const skillsWithLevels = [
