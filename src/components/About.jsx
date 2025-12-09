@@ -81,9 +81,9 @@ export const About= ({user, skillsWithLevels}) => {
               className="grid grid-cols-3 gap-6 pt-6"
             >
               {[
-                { value: "3+", label: "Years Experience" },
-                { value: "20+", label: "Projects" },
-                { value: "10+", label: "Technologies" },
+                { value: "2+", label: "Years Experience" },
+                { value: "3+", label: "Projects" },
+                { value: "5+", label: "Technologies" },
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -127,7 +127,7 @@ export const About= ({user, skillsWithLevels}) => {
 
             {/* Download Resume Button */}
             <motion.a
-            href="/resume.pdf"
+            href="/ravi_resume.pdf"
             download="Astha_Verma_Resume.pdf"
               whileHover={{ scale: 1.02, boxShadow: "0 0 30px rgba(22, 242, 179, 0.3)" }}
               whileTap={{ scale: 0.98 }}

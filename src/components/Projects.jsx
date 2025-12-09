@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Github, Folder } from "lucide-react";
+import { Folder } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -52,7 +52,7 @@ const experience = [
   {
     role: "Software Developer",
     company: "Capgemini",
-    duration: "September 2023 - Present",
+    duration: "October 2023 - Present",
     description: "Developed diverse frontend applications using Angular. Designed pixel-perfect UIs including GPT-powered chatbot and prompting skills app. Integrated backend APIs, optimized performance, and implemented user-centric features.",
   },
 ];

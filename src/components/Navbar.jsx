@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X } from "lucide-react";
 
@@ -81,8 +81,14 @@ const mobileItemVariants = {
   },
 } 
 
-const Navbar = ({scrollToSection}) => {
+const Navbar = ({scrollToSection, user}) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const nameInitials = user
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .toUpperCase();
 
   return (
     <nav className="relative bg-black">
@@ -139,7 +145,7 @@ const Navbar = ({scrollToSection}) => {
                   textShadow: "0 0 8px hsl(var(--primary))",
                 }}
               >
-                AV
+                {nameInitials}
               </motion.h1>
             </motion.div>
 

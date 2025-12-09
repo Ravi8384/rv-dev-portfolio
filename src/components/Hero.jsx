@@ -1,7 +1,7 @@
 
 import { motion } from "motion/react";
 // Update the path and filename to your actual image file
-import circleProfile from "../assets/av.png";
+import circleProfile from "../assets/ravi.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -170,7 +170,7 @@ export const Hero = ({user,skills,heroSummary, scrollToSection}) => {
                   <span className="text-center px-4">
                     <img 
                       src={circleProfile} 
-                      alt="Astha Verma"
+                      alt="Ravi Garg"
                       
                     />
                     {/* className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 object-cover rounded-full" */}

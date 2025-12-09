@@ -1,6 +1,5 @@
 
 // src/App.jsx
-import {motion} from "motion/react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { About } from "./components/About";
@@ -19,8 +18,8 @@ function App() {
     
 }
 
-  const userName = "Astha Verma";
-  const skills = ["Frontend Developer", "Angular", "React", "GenAI"," TypeScript", "Tailwind CSS"];
+  const userName = "Ravi Garg";
+  const skills = ["Frontend Developer", "Angular", "React", "GenAI", "JavaScript", "TypeScript", "Tailwind CSS"];
   const heroSummary = "Crafting beautiful, performant web experiences with modern technologies and a passion for clean code.";
 
   const skillsWithLevels = [
@@ -34,7 +33,7 @@ function App() {
   
   return (
     <>
-    <Navbar scrollToSection={scrollToSection}/>
+    <Navbar scrollToSection={scrollToSection} user={userName}/>
     <section id="home">
     <Hero  user={userName} skills={skills} heroSummary={heroSummary} scrollToSection={scrollToSection}/>
       </section>

@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter, Loader2 } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Github, Linkedin, Loader2 } from "lucide-react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import {Toaster, toast } from "sonner";
@@ -8,10 +8,6 @@ import {Toaster, toast } from "sonner";
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID =import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-console.log("EmailJS Service ID:", EMAILJS_SERVICE_ID);
-console.log("EmailJS Template ID:", EMAILJS_TEMPLATE_ID);
-console.log("EmailJS Public Key:", EMAILJS_PUBLIC_KEY);
 
 
 
@@ -39,14 +35,14 @@ const itemVariants = {
 } 
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "av.asthaverma17@gmail.com", href: "mailto:av.asthaverma17@gmail.com" },
-  { icon: Phone, label: "Phone", value: "+91 6397735418", href: "tel:+916397735418" },
+  { icon: Mail, label: "Email", value: "ravi92601@gmail.com", href: "mailto:ravi92601@gmail.com" },
+  { icon: Phone, label: "Phone", value: "+91 9119720822", href: "tel:+91 9119720822" },
   { icon: MapPin, label: "Location", value: "India", href: "https://maps.app.goo.gl/DMYyaK3FrfcY5oLCA" },
 ];
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "https://github.com/AsthaVerma17" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/astha-verma-186856196/" },
+  { icon: Github, label: "GitHub", href: "https://github.com/Ravi8384" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/ravi-kant-garg2002/" },
 ];
 
 export default function ContactMe() {
@@ -76,7 +72,8 @@ export default function ContactMe() {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_name: "Astha", // Your name
+          subject: "New Contact Message from Portfolio",
+          to_name: "Ravi", // Your name
         },
         EMAILJS_PUBLIC_KEY
       );
