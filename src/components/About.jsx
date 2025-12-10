@@ -128,7 +128,7 @@ export const About= ({user, skillsWithLevels}) => {
             {/* Download Resume Button */}
             <motion.a
             href="/ravi_resume.pdf"
-            download="Astha_Verma_Resume.pdf"
+            download="Ravi_Garg_Resume.pdf"
               whileHover={{ scale: 1.02, boxShadow: "0 0 30px rgba(22, 242, 179, 0.3)" }}
               whileTap={{ scale: 0.98 }}
               className="mt-8 w-full py-4 px-6 bg-transparent border-2 border-[#16f2b3] text-[#16f2b3] rounded-lg font-semibold hover:bg-[#16f2b3]/10 transition-colors duration-300 text-center block"
